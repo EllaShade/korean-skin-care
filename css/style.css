@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: rgba(9, 20, 6, 0.877);
 }
 
 nav {
@@ -8,7 +9,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(27, 68, 9, 0.349);
+  background-color: rgba(27, 68, 9, 0.603);
   padding: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -52,7 +53,7 @@ nav {
 }
 
 header {
-  margin: 0 auto;
+  margin: 0 150px;
   position: relative;
   height: 100vh;
   display: flex;
@@ -120,11 +121,75 @@ header h2 {
   color: white;
 }
 
+footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(rgba(7, 10, 5, 0.85), rgba(3, 5, 3, 0.85)),
+    url(/images/skincare-footer.png);
+  height: 25vh;
+  padding: 80px 0;
+  margin: 20px 150px;
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  color: rgba(222, 236, 218, 1);
+}
+
+.grid {
+  margin: 20px 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 15px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 280;
+  line-height: 24px;
+  opacity: 0.7;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: rgba(222, 236, 218, 1);
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
+  nav {
+    position: relative;
+  }
+
+  .navbar {
+    margin: 0 10px;
+  }
+
   .navbar-brand {
     font-size: 18px;
     margin-left: 5px;
   }
+  .nav-item {
+    margin: auto 10px auto auto;
+  }
+
   .nav-link {
     font-size: 14px;
     font-weight: 300;
@@ -132,8 +197,12 @@ header h2 {
     margin: 0 6px;
   }
 
+  header {
+    margin: 0 30px;
+  }
+
   header h3 {
-    margin: 140px 20px 30px 20px;
+    margin: 100px 20px 30px 20px;
     font-size: 16px;
   }
 
@@ -144,5 +213,32 @@ header h2 {
   header h2 {
     font-size: 22px;
     margin: 40px 40px;
+  }
+
+  footer {
+    background-image: linear-gradient(rgba(7, 10, 5, 0.9), rgba(3, 5, 3, 0.9)),
+      url(/images/skincare-footer.png);
+    height: 40vh;
+    padding: 80px 0;
+    margin: 5px 30px;
+    padding: 5px 10px 115px 10px;
+  }
+  .grid {
+    margin: 5px 6px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  }
+
+  footer h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  footer p {
+    font-size: 12px;
+    font-weight: 280;
+    line-height: 17px;
+    opacity: 0.7;
   }
 }
