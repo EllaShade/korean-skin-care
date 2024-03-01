@@ -567,6 +567,44 @@ main {
   background-color: #556f48;
 }
 
+/* product-site*/
+
+.product-list {
+  background-color: #b8ddb8;
+  margin: 0;
+  padding: 40px 120px;
+}
+
+.product-list div {
+  margin: 25px 0;
+}
+
+.product {
+  width: 400px;
+  height: 400px;
+}
+.disclaimer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.disclaimer p {
+  text-align: center;
+}
+.video {
+  background-color: #556f48;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-left: 0 !important;
+  padding: 0 80px;
+}
+
+.youtube-video {
+  width: 1000px;
+  height: 600px;
+}
+
 footer {
   background-size: cover;
   background-repeat: no-repeat;
