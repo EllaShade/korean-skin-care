@@ -529,6 +529,10 @@ main {
   display: block;
 }
 
+.routine-list {
+  display: none;
+}
+
 .routine-skincare {
   background-color: #cbf5eb;
   margin: 0;
@@ -698,6 +702,54 @@ footer a:hover {
   .grid-2-columns {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+  }
+
+  .routine-image img {
+    display: none;
+  }
+  .routine-list {
+    display: block;
+    margin: 10px 25px;
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  .routine-list ul {
+    margin: 0;
+  }
+  .routine-list li {
+    margin: 45px 0;
+    width: 240px;
+  }
+
+  .routine-list li p {
+    font-size: 15.5px;
+  }
+
+  .hotspot {
+    display: none;
+  }
+
+  .routine-text {
+    display: block;
+  }
+
+  .hotspot-list h3 {
+    font-weight: 450;
+    color: #556f48;
+  }
+  .hotspot-list p {
+    font-size: 15px;
+  }
+  .routine-text p {
+    font-size: 18px;
+  }
+  .routine-text-small {
+    display: block;
+  }
+
+  .routine-btn a {
+    font-size: 17px;
   }
 
   footer {
