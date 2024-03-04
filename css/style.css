@@ -335,7 +335,7 @@ nav {
 
 section {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 header {
@@ -571,39 +571,59 @@ main {
 
 .product-list {
   background-color: #b8ddb8;
+  grid-gap: 10px;
   margin: 0;
   padding: 40px 120px;
   margin: 0;
 }
 
 .product-list div {
-  margin: 25px 0;
+  margin: 25px 20px;
+}
+
+.product-list p {
+  font-size: 15px;
+  font-weight: 430;
 }
 
 .product {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
+
 .disclaimer {
-  display: grid;
-  grid-template-columns: 1fr;
+  background-color: #7a916f;
+  padding: 20px 30px;
 }
 
 .disclaimer p {
   text-align: center;
+  font-weight: 350;
+  font-size: 14px;
 }
+
 .video {
   background-color: #556f48;
   display: flex;
   justify-content: center;
   margin: 0;
   margin-left: 0 !important;
-  padding: 0 112px;
 }
 
 .youtube-video {
   width: 1000px;
   height: 600px;
+}
+/*contact-site*/
+
+.fa-instagram {
+  font-size: 33px;
+  color: #556f48;
+}
+
+.fa-square-facebook {
+  font-size: 33px;
+  color: #556f48;
 }
 
 footer {
@@ -669,7 +689,9 @@ footer a:hover {
 @media (max-width: 800px) {
   body {
     margin-right: 0;
+    margin-left: 0;
   }
+
   nav {
     position: relative;
   }
@@ -789,6 +811,33 @@ footer a:hover {
 
   .routine-btn a {
     font-size: 17px;
+  }
+  /*product-site*/
+
+  .product-list {
+    justify-content: center;
+    padding: 0;
+  }
+  .product {
+    width: 300px;
+    height: 300px;
+  }
+
+  .disclaimer {
+    background-color: #7a916f;
+    padding: 20px 30px;
+    margin: 0;
+  }
+
+  .disclaimer p {
+    text-align: center;
+    font-weight: 350;
+    font-size: 13px;
+  }
+
+  .youtube-video {
+    width: 300px;
+    height: 200px;
   }
 
   footer {
