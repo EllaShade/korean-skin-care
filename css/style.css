@@ -574,7 +574,6 @@ main {
   grid-gap: 10px;
   margin: 0;
   padding: 40px 120px;
-  margin: 0;
 }
 
 .product-list div {
@@ -593,7 +592,7 @@ main {
 
 .disclaimer {
   background-color: #7a916f;
-  padding: 20px 30px;
+  padding: 40px 120px;
 }
 
 .disclaimer p {
@@ -608,10 +607,11 @@ main {
   justify-content: center;
   margin: 0;
   margin-left: 0 !important;
+  padding: 40px 120px;
 }
 
 .youtube-video {
-  width: 1000px;
+  width: 1100px;
   height: 600px;
 }
 /*contact-site*/
